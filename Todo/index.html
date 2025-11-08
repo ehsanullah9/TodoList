@@ -1,27 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <h1 class="text-3xl text-center mt-4 font-bold capitalize ">
-     todolist
-    </h1>
-    <div class="mt-4 mx-auto w-1/2 flex w-150 justify-center">
-        <input type="text" class="border w-full border-gray-300 p-2 rounded-2xl" placeholder="Add a new task">
-        <button class="bg-orange-300 text-black p-2 rounded-2xl w-30 ml-2">Add</button>
-    </div>
-   <div class="mt-6 mx-auto">
-     <ul class="mt-4 mx-auto w-150" id="todo-list">
-        <li class="border-b border-gray-300 rounded-2xl px-4 bg-orange-100 hover:bg-orange-200 py-2 mt-1">Sample Todo Item</li>
-        <li class="border-b border-gray-300 rounded-2xl px-4 bg-orange-100 hover:bg-orange-200 py-2 mt-1">Sample Todo Item</li>
-        <li class="border-b border-gray-300 rounded-2xl px-4 bg-orange-100 hover:bg-orange-200 py-2 mt-1">Sample Todo Item</li>
-        <li class="border-b border-gray-300 rounded-2xl px-4 bg-orange-100 hover:bg-orange-200 py-2 mt-1">Sample Todo Item</li>
-    </ul>
-   </div>
 
-    <script type="module" src="./app.js"></script>
+      <h1 class="text-3xl text-center mt-4 font-bold capitalize">todolist</h1>
+      <div class="mt-4 mx-auto w-1/2 flex w-150 justify-center">
+        <input
+          type="text"
+          id="TodoInput"
+          class="border w-full border-gray-300 px-4 p-2 rounded-2xl"
+          placeholder="Add a new task"
+        />
+        <button
+          id="AddTodoBtn"
+          class="bg-green-300 hover:bg-green-400 transition-colors duration-100 text-black p-2 rounded-2xl w-30 ml-2"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+    <div class="mt-6 mx-auto">
+      <ul
+        id="TodosContainer"
+        class="mt-4 mx-auto w-150 transition-colors duration-300"
+      >
+    
+    </ul>
+    <script src="./script.js" type="module" ></script>
   </body>
 </html>
